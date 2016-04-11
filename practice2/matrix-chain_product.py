@@ -28,6 +28,9 @@ def matrix_chain_order(p):
                 if q < m[i][j]:
                     m[i][j] = q
                     s[i][j] = k + 1
+
+    print_optimal_parens(s, 0, n - 1)
+    print()
     return m, s
 
 
@@ -43,7 +46,6 @@ def print_optimal_parens(s,i,j):
 m, s = matrix_chain_order(g)
 print(m)
 print(s)
-print_optimal_parens(s,0,5)
 
 
 
