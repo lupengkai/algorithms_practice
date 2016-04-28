@@ -24,7 +24,7 @@ def lcs_length(x, y):
             elif c[i - 1][j] >= c[i][j - 1]:  # 上边大于等于左边
                 c[i][j] = c[i - 1][j]  # 上边的值
                 b[i][j] = 2
-            else:
+            else:  # 左边值最大
                 c[i][j] = c[i][j - 1]  # 左边的值
                 b[i][j] = 1
 
