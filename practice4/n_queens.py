@@ -28,4 +28,4 @@ def n_queens(n):
             k -= 1
 
 
-n_queens(4)
+n_queens(8)
